@@ -51,6 +51,8 @@ class View(ft.UserControl):
 
         self._controller.setDates()
 
+        self._controller.fillDDCat()
+
         self._btnCreaGrafo = ft.ElevatedButton(text="Crea Grafo", on_click=self._controller.handleCreaGrafo)
 
         self._btnBestProdotti = ft.ElevatedButton(text="Prodotti più venduti",
